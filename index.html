@@ -39,6 +39,7 @@
 body{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .over button{
     color:#003049;
@@ -61,13 +62,21 @@ body{
     font-weight: 500;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
     .game {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width: 80svw;
         height: 65svh;
-        /* margin-top: 4rem; */
     }
     
+    .btns {
+        width: 4.5rem;
+        height: 4.5rem;
+        font-size: 60px;
+    }
 }
     </style>
     <title>Tic Tac Toe</title>
